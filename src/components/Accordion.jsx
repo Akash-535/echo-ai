@@ -3,7 +3,7 @@ import { ACCORDION_LIST } from '../utils/helper'
 import { FaqIcon } from '../utils/icons';
 
 const Accordion = () => {
-  const [open, setOpen] = useState();
+  const [open, setOpen] = useState(0);
 
   const toggleAccordion = (index) => {
       setOpen(open === index ? "" : index);
