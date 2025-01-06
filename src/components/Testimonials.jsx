@@ -1,7 +1,7 @@
 import React from 'react'
 import { TESTIMONIALS_LIST } from '../utils/helper'
 import { Swiper ,SwiperSlide } from 'swiper/react'
-import { Autoplay, Pagination } from 'swiper/modules'
+import { Autoplay } from 'swiper/modules'
 
 const Testimonials = () => {
   return (
@@ -11,15 +11,12 @@ const Testimonials = () => {
    <Swiper 
         slidesPerView={3}
         spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
+           autoplay={{
           delay: 3000,
           disableOnInteraction: false,
         }}
         loop={true}
-        modules={[Pagination, Autoplay]}
+        modules={[Autoplay]}
         breakpoints={{
           320: {
             slidesPerView: 1,
