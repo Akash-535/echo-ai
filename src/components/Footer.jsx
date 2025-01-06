@@ -37,7 +37,7 @@ const Footer = () => {
                 </div>
                 <div className="md:hidden flex w-full justify-between max-w-[350px] mx-auto px-5">
                     {FOOTER_LIST.map((obj , i) => (
-                        <div key={i} className='flex flex-col gap-4'> 
+                        <div key={i} className='flex flex-col gap-4 text-center'> 
                              <p className='text-base font-normal text-white leading-custom-4xl'>{obj.heading}</p>
                              <ul className='flex flex-col gap-4'>
                              {obj.list.map((item , i) => (
@@ -47,12 +47,12 @@ const Footer = () => {
                              </div>
                        
                         ))}
-                <div>
+                <div className='text-center'>
                     <p className='text-base font-normal text-white leading-custom-4xl'>Send Us An E-mail</p>
                     <ul>
                         <li className='pt-3'><a href="mailto:info@echoai.ai" className='text-white opacity-70 duration-300 ease-linear hover:text-sky-blue hover:opacity-100'>info@echoai.ai</a></li>
                     </ul>
-                    <div className='pt-8'>
+                    <div className='pt-8 text-center'>
                         <p className='text-base font-normal text-white leading-custom-4xl pb-0.5'>Follow Us On</p>
                         <div className='flex gap-3 pt-4'>
                             {MEDIA_ICONS.map((obj , i) => (
