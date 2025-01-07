@@ -15,22 +15,13 @@ const Accordion = () => {
               {ACCORDION_LIST.map((obj , i) => (
                 <div key={i} className={`max-w-[1022px] w-full mx-auto p-[1px] rounded-xl ${open === i ? 'bg-gradient-to-r from-blue-purple to-sky-blue' : 'bg-white bg-opacity-10'}`}>
                   <div className='max-w-[1022px] w-full mx-auto bg-off-black rounded-xl p-6 max-md:p-4'>
-                  <button
-                            onClick={() => toggleAccordion(i)}
-                            className="w-full flex justify-between items-center font-semibold text-xl text-white leading-custom-3xl max-md:text-base gap-3 text-start"
-                        >
+                  <button onClick={() => toggleAccordion(i)} className="w-full flex justify-between items-center font-semibold text-xl text-white leading-custom-3xl max-md:text-base gap-3 text-start">
                             {obj.question}
-                            <span
-                                className={` ${open === i ? 'rotate-180' : 'rotate-0'
-                                    } duration-500 ease-linear`}
-                            >
+                            <span className={` ${open === i ? 'rotate-180' : 'rotate-0'} duration-500 ease-linear`}>
                                 <FaqIcon />
                             </span>
                         </button>
-                        <div
-                            className={`md:overflow-hidden overflow-auto transition-all duration-700 ease-in-out ${open === i ? 'max-h-[200px]' : 'max-h-0'
-                                }`}
-                        >
+                        <div className={`md:overflow-hidden overflow-auto transition-all duration-700 ease-in-out ${open === i ? 'max-h-[200px]' : 'max-h-0'}`}>
                             <p className="text-base text-white pt-4">
                                 {obj.answer}
                             </p>

@@ -8,7 +8,7 @@ export const Preloader = () => {
         setTimeout(() => {
             setPreloader(false);
             document.body.style.overflow = 'auto'
-        }, 2000)
+        }, 2500)
 
     }, []);
 
@@ -16,9 +16,7 @@ export const Preloader = () => {
         <div>
             {isPreloader ? (
                 <div className='min-h-screen bg-black z-[100] fixed w-full h-full flex justify-center items-center'>
-                    <div
-                    >
-                        <Lottie className='max-w-3xl' animationData={preloaderLottie} /></div>
+                                        <Lottie className='max-w-3xl' animationData={preloaderLottie} />
                 </div>
             ) : null}
         </div>

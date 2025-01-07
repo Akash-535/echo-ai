@@ -19,8 +19,7 @@ const ResultCounter = () => {
                 i === 0 ? 'relative after:absolute after:content-"" after:h-full after:w-0.5 after:bg-gradient-to-b after:from-white-custom-70 after:to-white-gray after:top-0 after:right-0 after:max-md:rotate-90 after:max-md:bottom-0 after:max-md:right-1/2 after:max-md:top-3/4':
                 i === 1 ? 'relative after:absolute after:content-"" after:h-full after:w-0.5 after:bg-gradient-to-b after:from-white-custom-70 after:to-white-gray after:top-0 after:right-0 after:max-md:rotate-90 after:max-md:bottom-0 after:max-md:right-1/2 after:max-md:top-3/4'
                   : ''
-              }`}
-            >
+              }`}>
               <p className="text-5xl font-semibold leading-custom-3xl">
                 {i === 0 ? (<CountUp start={0} end={count ? obj.value : 0} duration={10} suffix={obj.suffix} decimals={0} />):
                  i === 1 ? (
@@ -34,8 +33,7 @@ const ResultCounter = () => {
               <p
                 className={`mt-2 opacity-80 text-base mx-auto text-center ${
                   i === 2 ? 'max-w-[187px]' : 'max-w-[146px]'
-                }`}
-              >
+                }`}>
                 {obj.description}
               </p>
             </div>

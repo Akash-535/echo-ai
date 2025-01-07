@@ -14,10 +14,8 @@ const Hero = () => {
                 <p className='text-xl font-normal leading-custom-5xl text-white text-center py-6 max-md:text-lg max-sm:text-base max-lg:py-4 max-sm:py-2'>Next Gen AI Automation to Scale Your Business.</p>
                 <button className='text-xl font-semibold rounded-full text-white bg-gradient-to-r from-lite-blue to-sky-blue py-[19.5px] px-[39px] hover:bg-gradient-to-l duration-300 ease-linear max-lg:text-base max-lg:py-3 max-lg:px-6'>Book A Call Now!</button>
             </div>
-            <div>
-              <Lottie  className='max-w-[470px] w-full pointer-events-none max-lg:max-w-[400px] object-cover max-md:max-w-[370px] max-sm:max-w-[320px]' animationData={heroLottie}/>
+              <Lottie className='max-w-[470px] w-full pointer-events-none max-lg:max-w-[400px] object-cover max-md:max-w-[370px] max-sm:max-w-[320px]' animationData={heroLottie}/>
               </div>
-        </div>
     </div>
   )
 }
