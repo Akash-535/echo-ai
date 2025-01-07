@@ -1,15 +1,15 @@
 import './App.css';
 import Accordion from './components/Accordion';
-import CustomCounter from './components/CustomCounter';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import Testimonials from './components/Testimonials';
+import ResultCounter from './components/ResultCounter';
 
 function App() {
   return (
  <>
  <Hero/>
- <CustomCounter/>
+<ResultCounter/>
  <Testimonials/>
  <Accordion/>
  <Footer/>
