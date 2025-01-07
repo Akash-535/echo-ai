@@ -52,15 +52,15 @@ const Testimonials = () => {
 
       <div className="flex items-center gap-2">
         <img
-          className="size-[60px]"
+          className="size-[60px] max-md:size-11 max-sm:size-9"
           src={obj.image}
           alt="swiper image"
         />
         <div className="flex flex-col">
-          <h5 className="text-xl font-medium text-white leading-custom-3xl">
+          <p className="text-xl font-medium text-white leading-custom-3xl max-md:text-lg max-sm:text-base">
             {obj.imgHeading}
-          </h5>
-          <p className="text-base font-normal text-white leading-custom-5xl">
+          </p>
+          <p className="text-base font-normal text-white leading-custom-5xl max-sm:text-sm">
             {obj.imgDescription}
           </p>
         </div>

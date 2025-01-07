@@ -5,10 +5,12 @@ import Hero from './components/Hero';
 import Testimonials from './components/Testimonials';
 import ResultCounter from './components/ResultCounter';
 import BackToTop from './common/BackToTop';
+import Preloader from './common/Preloader';
 
 function App() {
   return (
  <>
+ <Preloader/>
  <Hero/>
 <ResultCounter/>
  <Testimonials/>
