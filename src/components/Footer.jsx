@@ -30,7 +30,7 @@ const Footer = () => {
                         <p className='text-base font-normal text-white leading-custom-4xl pb-0.5'>Follow Us On</p>
                         <div className='flex gap-3 pt-4'>
                             {MEDIA_ICONS.map((obj , i) => (
-                                <a href={obj.link} key={i} className='p-2.5 bg-gradient-to-r from-blue-purple to-sky-blue rounded-full hover:scale-105 hover:shadow-md hover:shadow-sky-blue transition-all duration-300 ease-linear'>{obj.icon}</a>
+                                <a href={obj.link} key={i} target='_blank' className='p-2.5 bg-gradient-to-r from-blue-purple to-sky-blue rounded-full hover:scale-105 hover:shadow-md hover:shadow-sky-blue transition-all duration-300 ease-linear'>{obj.icon}</a>
                             ))}
                         </div>
                     </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                         <p className='text-base font-normal text-white leading-custom-4xl pb-0.5'>Follow Us On</p>
                         <div className='flex gap-3 pt-4'>
                             {MEDIA_ICONS.map((obj , i) => (
-                                <a href={obj.link} key={i} className='p-2.5 bg-gradient-to-r from-blue-purple to-sky-blue rounded-full hover:scale-105 hover:shadow-md hover:shadow-sky-blue transition-all duration-300 ease-linear'>{obj.icon}</a>
+                                <a href={obj.link} key={i} target='_blank' className='p-2.5 bg-gradient-to-r from-blue-purple to-sky-blue rounded-full hover:scale-105 hover:shadow-md hover:shadow-sky-blue transition-all duration-300 ease-linear'>{obj.icon}</a>
                             ))}
                         </div>
                     </div>

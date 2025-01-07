@@ -1,5 +1,7 @@
 import React from 'react'
 import Header from '../common/Header'
+import Lottie from 'lottie-react'
+import heroLottie from '../lottie/hero-lottie.json'
 
 const Hero = () => {
   return (
@@ -10,11 +12,11 @@ const Hero = () => {
             <div className='w-6/12 text-center max-lg:w-full'>
                 <h1 className='text-7xl text-white text-center font-bold max-xl:text-6xl max-md:text-5xl max-sm:text-3xl max-sm:leading-8'>Innovate, Automate, Accelerate </h1>
                 <p className='text-xl font-normal leading-custom-5xl text-white text-center py-6 max-md:text-lg max-sm:text-base max-lg:py-4 max-sm:py-2'>Next Gen AI Automation to Scale Your Business.</p>
-                <button className='text-xl font-semibold rounded-full text-white bg-gradient-to-r from-lite-blue to-sky-blue py-[19.5px] px-8 hover:bg-gradient-to-l duration-300 ease-linear max-lg:text-base max-lg:py-3 max-lg:px-6'>Book A Call Now!</button>
+                <button className='text-xl font-semibold rounded-full text-white bg-gradient-to-r from-lite-blue to-sky-blue py-[19.5px] px-[39px] hover:bg-gradient-to-l duration-300 ease-linear max-lg:text-base max-lg:py-3 max-lg:px-6'>Book A Call Now!</button>
             </div>
             <div>
-              <img className='max-w-[470px] w-full pointer-events-none max-lg:max-w-[400px] object-cover max-md:max-w-[370px] max-sm:max-w-[320px]' src="./assets/images/hero-img.webp" alt="hero img" />
-            </div>
+              <Lottie  className='max-w-[470px] w-full pointer-events-none max-lg:max-w-[400px] object-cover max-md:max-w-[370px] max-sm:max-w-[320px]' animationData={heroLottie}/>
+              </div>
         </div>
     </div>
   )
