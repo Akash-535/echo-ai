@@ -11,15 +11,15 @@ export const HEADER_LIST = [
     },
     {
         item: 'Benefits',
-        link: "/"
+        link: "#benifits"
     },
     {
         item: 'Testimonials',
-        link: "/"
+        link: "#testimonials"
     },
     {
         item: 'FAQs',
-        link: "/"
+        link: "#accordion"
     }
 ]
 
@@ -99,7 +99,7 @@ export const ACCORDION_LIST = [
 
 export const FOOTER_LIST = [
     {
-        heading:"Quick Links",
+        title:"Quick Links",
         list:[
             "About us",
             "Solutions",

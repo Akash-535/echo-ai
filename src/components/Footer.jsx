@@ -11,7 +11,7 @@ const Footer = () => {
                 <div className='max-md:hidden'>
                     {FOOTER_LIST.map((obj , i) => (
                         <div key={i} className='flex flex-col gap-4'> 
-                             <p className='text-base font-normal text-white leading-custom-4xl'>{obj.heading}</p>
+                             <p className='text-base font-normal text-white leading-custom-4xl'>{obj.title}</p>
                              <ul className='flex flex-col gap-4'>
                              {obj.list.map((item , i) => (
                                  <li key={i}><a href="/" className='text-white opacity-70 duration-300 ease-linear hover:text-sky-blue hover:opacity-100'>{item}</a></li>
@@ -38,7 +38,7 @@ const Footer = () => {
                 <div className="md:hidden flex w-full justify-between max-w-[350px] mx-auto px-5">
                     {FOOTER_LIST.map((obj , i) => (
                         <div key={i} className='flex flex-col gap-4 text-center'> 
-                             <p className='text-base font-normal text-white leading-custom-4xl'>{obj.heading}</p>
+                             <p className='text-base font-normal text-white leading-custom-4xl'>{obj.title}</p>
                              <ul className='flex flex-col gap-4'>
                              {obj.list.map((item , i) => (
                                  <li key={i}><a href="/" className='text-white opacity-70 duration-300 ease-linear hover:text-sky-blue hover:opacity-100'>{item}</a></li>

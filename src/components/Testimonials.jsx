@@ -5,7 +5,7 @@ import { Autoplay} from 'swiper/modules'
 
 const Testimonials = () => {
   return (
-    <div className='pt-44 pb-52 max-lg:pb-48 max-md:py-36 max-sm:py-20'>
+    <div id='testimonials' className='pt-44 pb-52 max-lg:pb-48 max-md:py-36 max-sm:py-20'>
         <div className='container overflow-hidden px-5'>
         <h2 className='text-white text-5xl font-semibold leading-custom-2xl pb-10 text-center max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-md:pb-5'>Testimonials</h2>
    <Swiper 

@@ -8,9 +8,8 @@ const ResultCounter = () => {
   const handleVisibility = (isVisible) => {
     setCount(isVisible);
   };
-
   return (
-    <div className="text-white pt-14">
+    <div id='benifits' className="text-white pt-14">
       <ReactVisibilitySensor onChange={handleVisibility}>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12 md:gap-4">
           {COUNTER_LIST.map((obj, i) => (
@@ -23,13 +22,13 @@ const ResultCounter = () => {
               }`}
             >
               <p className="text-5xl font-semibold leading-custom-3xl">
-                {i === 0 ? (<CountUp start={0} end={count ? obj.value : 0} duration={10} delay={1} suffix={obj.suffix} decimals={0} />):
+                {i === 0 ? (<CountUp start={0} end={count ? obj.value : 0} duration={10} suffix={obj.suffix} decimals={0} />):
                  i === 1 ? (
                   <span>
-                    $<CountUp start={0} end={count ? obj.value : 0} duration={10} delay={1} suffix={obj.suffix} decimals={0} />
+                    $<CountUp start={0} end={count ? obj.value : 0} duration={10} suffix={obj.suffix} decimals={0} />
                   </span>
                 ) : (
-                  <CountUp start={0} end={count ? obj.value : 0} duration={10} delay={1} suffix={obj.suffix} decimals={1} />
+                  <CountUp start={0} end={count ? obj.value : 0} duration={10} suffix={obj.suffix} decimals={1} />
                 )}
               </p>
               <p

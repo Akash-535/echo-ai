@@ -4,12 +4,11 @@ import { FaqIcon } from '../utils/icons';
 
 const Accordion = () => {
   const [open, setOpen] = useState(0);
-
   const toggleAccordion = (index) => {
       setOpen(open === index ? "" : index);
   };
   return (
-    <div className='pb-[356px] px-5 max-xl:pb-64 max-lg:pb-52 max-md:pb-36 max-sm:pb-20'>
+    <div id='accordion' className='pb-[356px] px-5 max-xl:pb-64 max-lg:pb-52 max-md:pb-36 max-sm:pb-20'>
         <div className="container">
             <h2 className='text-white text-5xl font-semibold leading-custom-2xl pb-[60px] text-center max-lg:text-4xl max-md:text-3xl max-sm:text-2xl max-lg:pb-10 max-md:pb-7 max-sm:pb-5'>FAQ<span>s</span></h2>
             <div className='flex flex-col gap-6'>
