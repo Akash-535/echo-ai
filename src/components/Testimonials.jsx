@@ -1,7 +1,7 @@
 import React from 'react'
 import { TESTIMONIALS_LIST } from '../utils/helper'
 import { Swiper ,SwiperSlide } from 'swiper/react'
-import { Autoplay } from 'swiper/modules'
+import { Autoplay} from 'swiper/modules'
 
 const Testimonials = () => {
   return (

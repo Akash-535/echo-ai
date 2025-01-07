@@ -17,8 +17,8 @@ const ResultCounter = () => {
             <div
               key={i}
               className={`flex-1 text-center px-4 ${
-                i === 0 || i === 1
-                  ? 'relative after:absolute after:content-"" after:h-full after:w-0.5 after:bg-gradient-to-b after:from-white-custom-70 after:to-white-gray after:top-0 after:right-0 after:max-md:rotate-90 after:max-md:bottom-0 after:max-md:right-1/2 after:max-md:top-3/4'
+                i === 0 ? 'relative after:absolute after:content-"" after:h-full after:w-0.5 after:bg-gradient-to-b after:from-white-custom-70 after:to-white-gray after:top-0 after:right-0 after:max-md:rotate-90 after:max-md:bottom-0 after:max-md:right-1/2 after:max-md:top-3/4':
+                i === 1 ? 'relative after:absolute after:content-"" after:h-full after:w-0.5 after:bg-gradient-to-b after:from-white-custom-70 after:to-white-gray after:top-0 after:right-0 after:max-md:rotate-90 after:max-md:bottom-0 after:max-md:right-1/2 after:max-md:top-3/4'
                   : ''
               }`}
             >
