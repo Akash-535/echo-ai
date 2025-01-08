@@ -3,11 +3,11 @@ import { FacebookIcon, InstagramIcon, LinkedInIcon } from "./icons"
 export const HEADER_LIST = [
     {
         item: 'About us',
-        link: "/"
+        link: "#footer"
     },
     {
         item: 'Solutions',
-        link: "/"
+        link: "#footer"
     },
     {
         item: 'Benefits',
@@ -101,11 +101,26 @@ export const FOOTER_LIST = [
     {
         title:"Quick Links",
         list:[
-            "About us",
-            "Solutions",
-            "Benefits",
-            "Testimonials",
-            "FAQs"            
+            {
+                item: 'About us',
+                link: "#hero"
+            },
+            {
+                item: 'Solutions',
+                link: "#hero"
+            },
+            {
+                item: 'Benefits',
+                link: "#benifits"
+            },
+            {
+                item: 'Testimonials',
+                link: "#testimonials"
+            },
+            {
+                item: 'FAQs',
+                link: "#accordion"
+            }           
         ]
     }
 ]

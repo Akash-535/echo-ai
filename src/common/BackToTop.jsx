@@ -15,11 +15,11 @@ const BackToTop = () => {
     },)
 
     return (
-        <div>
+        <>
             {scrollTop && (
                 <button onClick={scrollHandler} className='fixed right-[10px] bottom-[10px] animate-bounce z-40'><Lottie className='rotate-180 size-16' animationData={backTop}/></button>)
             }
-        </div>
+        </>
     )
 }
 
